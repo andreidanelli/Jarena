@@ -16,6 +16,7 @@ public class AgenteInimigo extends Agente
 	public void pensa() {
 		if(!podeMoverPara(getDirecao())) {
 			setDirecao(geraDirecaoAleatoria());
+			ganhaEnergia(100);
 		}
 	}
 	
